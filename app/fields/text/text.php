@@ -50,7 +50,7 @@ class TextField extends InputField {
     $counter = new Brick('div');
     $counter->addClass('field-counter marginalia text');
 
-    $length = str::length(trim($this->value()));
+    $length = str::length(trim($this->value() ?? ""));
 
     if($this->outsideRange($length)) {
       $counter->addClass('outside-range');

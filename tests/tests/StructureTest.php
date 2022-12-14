@@ -27,7 +27,7 @@ class StructureTest extends PanelTestCase {
       'testKey' => 'testValue'
     ));
 
-    $this->assertTrue(is_string($id) and strlen($id) == 32);
+    $this->assertTrue(is_string($id) and strlen($id ?? "") == 32);
 
   }
 

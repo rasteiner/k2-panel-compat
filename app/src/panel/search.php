@@ -17,7 +17,7 @@ class Search {
 
   public function __construct($query) {
 
-    $this->query = trim($query);
+    $this->query = trim($query ?? "");
     $this->pages = new Collection;
     $this->users = new Collection;
 

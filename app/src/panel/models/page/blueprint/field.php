@@ -79,7 +79,7 @@ class Field extends Obj {
       return 'true';
     } else if($default === false) {
       return 'false';
-    } else if(empty($default) and strlen($default) == 0) {
+    } else if(empty($default) and strlen($default ?? "") == 0) {
       return '';
     } else if(is_string($default)) {
       return $default;
